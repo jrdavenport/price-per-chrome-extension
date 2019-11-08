@@ -1,6 +1,7 @@
 {
   "name": "Price Per",
   "version": "0.0.1",
+  "author": "James Davenport",  
   "manifest_version": 2,
   "description": "Highlight items based on their unit costs relative to each other",
   "content_scripts": [
