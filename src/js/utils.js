@@ -3,6 +3,7 @@ export const toKg = (unit, quantity = 1) => {
     // Assumes that 'kg' and 'l' are comparable
     case ('kg'):
     case ('l'):
+    case ('litre'):
       return quantity;
 
     case ('cl'):
