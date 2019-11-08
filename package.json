@@ -1,8 +1,7 @@
 {
   "name": "price-per",
-  "version": "1.0.0",
-  "description": "Highlight items based on their unit costs relative to each other",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Highlight items based on their per unit costs relative to each other",
   "author": "James Davenport <james.r.davenport@outlook.com>",
   "license": "MIT",
   "jest": {
