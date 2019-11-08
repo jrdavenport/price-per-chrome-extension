@@ -5,13 +5,11 @@
   "description": "Highlight items based on their unit costs relative to each other",
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["*://*.tesco.com/*"],
       "js": ["src/js/content_script.js"]
     }
   ],
-  "permissions": [
-    "<all_urls>"
-  ],
+  "permissions": ["*://*.tesco.com/*"],
   "web_accessible_resources": [
     "src/js/*"
   ]

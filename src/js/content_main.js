@@ -43,11 +43,8 @@ export const highlightPrices = (getPricedElements) => {
 const sitesConfig = [SiteConfigTesco];
 
 export function main() {
-  const readyStateCheckInterval = setInterval(() => {
-    // This only fires on a page load - a rerender in an SPA won't trigger this...
+  setInterval(() => {
     if (document.readyState === 'complete') {
-      clearInterval(readyStateCheckInterval);
-
       sitesConfig.forEach((siteConfig) => {
         if (siteConfig.hostUrl === window.location.host) {
           const {
@@ -59,5 +56,5 @@ export function main() {
         }
       });
     }
-  }, 10);
+  }, 1000);
 }
