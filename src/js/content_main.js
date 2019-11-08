@@ -1,4 +1,4 @@
-import SiteConfigTesco from './sites/tesco.js';
+import SiteConfigTesco from './sites/tesco/index.js';
 import { toKg, getPricePerKg } from './utils.js';
 
 export const highlightPrices = (getPricedElements) => {

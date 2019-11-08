@@ -1,4 +1,4 @@
-import siteConfigTesco from './tesco.js';
+import siteConfigTesco from '.';
 
 const {
   hostUrl,
