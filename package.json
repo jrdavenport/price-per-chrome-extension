@@ -13,7 +13,9 @@
     "lint": "eslint .",
     "jest": "jest",
     "jest:coverage": "jest --coverage --collectCoverageFrom=src/**/*.js",
-    "test": "yarn lint && yarn jest"
+    "test": "yarn lint && yarn jest",
+    "zip": "zip price-per manifest.json src/ icons/ -r -x *.svg*",
+    "build": "yarn test && yarn zip"
   },
   "devDependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
