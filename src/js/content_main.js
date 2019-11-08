@@ -28,12 +28,14 @@ export const highlightPrices = (getPricedElements) => {
         pricePerKilo,
       } = pricedElements[i];
 
-      const diffPricePer = pricePerKilo - minPricePer;
-      const priceRank = diffPricePer / PriceRange;
+      if (pricePerKilo) {
+        const diffPricePer = pricePerKilo - minPricePer;
+        const priceRank = diffPricePer / PriceRange;
 
-      const highlightHue = ((1 - priceRank) * 120).toString(10);
+        const highlightHue = ((1 - priceRank) * 120).toString(10);
 
-      element.style.backgroundColor = ['hsl(', highlightHue, ',100%,50%)'].join('');
+        element.style.backgroundColor = ['hsl(', highlightHue, ',100%,50%)'].join('');
+      }
     }
   }
 };
